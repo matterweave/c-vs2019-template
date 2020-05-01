@@ -21,7 +21,7 @@ rem %VENDOR%\...\lib
 set RUNTIME_LIBS=
 
 set BUILD_VARIABLES=
-set COMPILER_FLAGS=/Fe%PROGRAM_NAME% %BUILD_VARIABLES% -nologo -Wall -Z7 -EHsc -MDd -GR- %INCLUDES%
+set COMPILER_FLAGS=/Fe%PROGRAM_NAME% %BUILD_VARIABLES% -nologo -W3 -Z7 -EHsc -MDd -GR- %INCLUDES%
 set PROGRAM_ENTRY=%CODE%\main.c
 
 rem 32-bit build when using -subsystem:windows,5.01 or -subsystem:console,5.01
